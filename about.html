@@ -1,6 +1,83 @@
 <!doctype html>
-<html><body style="font-family:system-ui;padding:20px">
-<h2>About</h2>
-<p>This site exists to make people smile.</p>
-<a href="index.html">← Back</a>
-</body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — goodday4u.com</title>
+  <style>
+    :root{--b:#e5e7eb;--t:#111827;--m:#6b7280;}
+    body{margin:0;font-family:system-ui;background:#fff;color:var(--t);line-height:1.6}
+    .wrap{max-width:900px;margin:0 auto;padding:24px}
+    .card{border:1px solid var(--b);border-radius:16px;padding:18px 18px;background:#fff}
+    h1{font-size:28px;margin:0 0 10px}
+    h2{font-size:18px;margin:22px 0 10px}
+    p{margin:10px 0;color:#374151}
+    ul{margin:10px 0 0 20px;color:#374151}
+    .muted{color:var(--m);font-size:14px}
+    a{color:#2563eb;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .toprow{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:14px}
+    .btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--b);border-radius:999px;padding:10px 14px;background:#fff;font-weight:700;cursor:pointer;color:var(--t);text-decoration:none}
+    .btn:hover{border-color:#cbd5e1}
+    .grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px}
+    @media (min-width:900px){.grid{grid-template-columns:1fr 1fr}}
+    .note{border-left:4px solid #e5e7eb;padding:10px 12px;background:#fafafa;border-radius:10px}
+    footer{margin-top:18px;padding-top:14px;border-top:1px solid var(--b);color:var(--m);font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="toprow">
+      <a class="btn" href="index.html">← Back</a>
+      <div class="muted">goodday4u.com</div>
+    </div>
+
+    <div class="card">
+      <h1>About this project</h1>
+      <p class="muted">
+        goodday4u.com is a small “time killer” in the best sense: a tiny set of micro‑interactions that help you reset,
+        relax, or just smile for a moment.
+      </p>
+
+      <h2>What you’ll find here</h2>
+      <div class="grid" aria-label="Project sections">
+        <div class="note">
+          <b>Breathe</b>
+          <p>Tap the circle to start. Follow the rhythm (inhale / exhale). Optional rain sound.</p>
+        </div>
+        <div class="note">
+          <b>Unscrew the Nut</b>
+          <p>Drag left/right to rotate and move the nut down the bolt. Sound can be muted.</p>
+        </div>
+        <div class="note">
+          <b>Squish the Frog</b>
+          <p>Tap/press the frog to squish it. There’s a counter and a few messages along the way.</p>
+        </div>
+        <div class="note">
+          <b>Languages</b>
+          <p>You can switch language on each page. The site stores your choice in your browser.</p>
+        </div>
+      </div>
+
+      <h2>Why this exists</h2>
+      <p>
+        The goal is simple: provide a gentle, fast distraction that doesn’t demand your attention for long.
+        No feeds, no endless scrolling, no logins — just a few seconds of interaction and you’re done.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Feedback, bug reports, or partnership requests:
+        <a href="mailto:support@goodday4u.com">support@goodday4u.com</a>
+      </p>
+      <p class="muted">If you change your contact email, update it here and in the footer on the main page.</p>
+
+      <footer>
+        <a href="privacy.html">Privacy</a>
+        <span> · </span>
+        <a href="index.html">Home</a>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
