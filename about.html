@@ -4,6 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>About — goodday4u.com</title>
+  <script src="js/translations.js"></script>
+  <script src="js/common.js"></script>
   <style>
     :root{--b:#e5e7eb;--t:#111827;--m:#6b7280;}
     body{margin:0;font-family:system-ui;background:#fff;color:var(--t);line-height:1.6}
@@ -28,54 +30,54 @@
 <body>
   <div class="wrap">
     <div class="toprow">
-      <a class="btn" href="index.html">← Back</a>
+      <a class="btn" href="index.html" data-translate="back">← Back</a>
       <div class="muted">goodday4u.com</div>
     </div>
 
     <div class="card">
-      <h1>About this project</h1>
-      <p class="muted">
+      <h1 data-translate="aboutTitle">About this project</h1>
+      <p class="muted" data-translate="aboutSubtitle">
         goodday4u.com is a small “time killer” in the best sense: a tiny set of micro‑interactions that help you reset,
         relax, or just smile for a moment.
       </p>
 
-      <h2>What you’ll find here</h2>
+      <h2 data-translate="aboutSectionFind">What you’ll find here</h2>
       <div class="grid" aria-label="Project sections">
         <div class="note">
-          <b>Breathe</b>
-          <p>Tap the circle to start. Follow the rhythm (inhale / exhale). Optional rain sound.</p>
+          <b data-translate="aboutBreathe">Breathe</b>
+          <p data-translate="aboutBreatheText">Tap the circle to start. Follow the rhythm (inhale / exhale). Optional rain sound.</p>
         </div>
         <div class="note">
-          <b>Unscrew the Nut</b>
-          <p>Drag left/right to rotate and move the nut down the bolt. Sound can be muted.</p>
+          <b data-translate="aboutBolt">Unscrew the Nut</b>
+          <p data-translate="aboutBoltText">Drag left/right to rotate and move the nut down the bolt. Sound can be muted.</p>
         </div>
         <div class="note">
-          <b>Squish the Frog</b>
-          <p>Tap/press the frog to squish it. There’s a counter and a few messages along the way.</p>
+          <b data-translate="aboutFrog">Squish the Frog</b>
+          <p data-translate="aboutFrogText">Tap/press the frog to squish it. There’s a counter and a few messages along the way.</p>
         </div>
         <div class="note">
-          <b>Languages</b>
-          <p>You can switch language on each page. The site stores your choice in your browser.</p>
+          <b data-translate="aboutLanguages">Languages</b>
+          <p data-translate="aboutLanguagesText">You can switch language on each page. The site stores your choice in your browser.</p>
         </div>
       </div>
 
-      <h2>Why this exists</h2>
-      <p>
+      <h2 data-translate="aboutSectionWhy">Why this exists</h2>
+      <p data-translate="aboutWhyText">
         The goal is simple: provide a gentle, fast distraction that doesn’t demand your attention for long.
         No feeds, no endless scrolling, no logins — just a few seconds of interaction and you’re done.
       </p>
 
-      <h2>Contact</h2>
-      <p>
+      <h2 data-translate="aboutSectionContact">Contact</h2>
+      <p data-translate-html="aboutContactTextHtml">
         Feedback, bug reports, or partnership requests:
         <a href="mailto:support@goodday4u.com">support@goodday4u.com</a>
       </p>
       <p class="muted">If you change your contact email, update it here and in the footer on the main page.</p>
 
       <footer>
-        <a href="privacy.html">Privacy</a>
+        <a href="privacy.html" data-translate="privacyLink">Privacy</a>
         <span> · </span>
-        <a href="index.html">Home</a>
+        <a href="index.html" data-translate="homeLink">Home</a>
       </footer>
     </div>
   </div>
