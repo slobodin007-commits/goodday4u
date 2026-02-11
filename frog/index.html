@@ -4,6 +4,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Squish Frog — goodday4u.com</title>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8042664823664503"
+  crossorigin="anonymous"></script>
 <script src="../js/translations.js"></script>
 <script src="../js/common.js"></script>
 <style>
@@ -148,6 +150,34 @@
     background: #f0f0f0;
     font-weight: 500;
   }
+
+  /* Content (anti "thin content") */
+  details.content {
+    margin: 12px auto 0;
+    width: min(520px, 92vw);
+    text-align: left;
+    border: 1px solid var(--b);
+    border-radius: 16px;
+    background: #fafafa;
+    padding: 12px 14px;
+  }
+  details.content summary {
+    cursor: pointer;
+    font-weight: 800;
+    list-style: none;
+  }
+  details.content summary::-webkit-details-marker { display: none; }
+  details.content summary::after { content:"＋"; float:right; color:var(--m); font-weight:700; }
+  details.content[open] summary::after { content:"－"; }
+  details.content p { margin: 10px 0 0; color:#374151; }
+  details.content ul { margin: 10px 0 0 18px; color:#374151; }
+
+  /* Mobile fit */
+  @media (max-width: 600px){
+    .main-wrapper{padding:12px}
+    .wrap{min-height:auto}
+    .stage{height:min(420px, calc(100svh - 260px))}
+  }
 </style>
 </head>
 <body>
@@ -193,6 +223,19 @@
       <button class="top-btn" onclick="shareSite()" data-translate="share">Share</button>
     </div>
   </div>
+
+  <details class="content" aria-label="About this page">
+    <summary>What is this?</summary>
+    <p>
+      A small, silly micro‑interaction. Tap/press to squish the frog and get a tiny dopamine reset.
+      It’s intentionally simple and quick — no levels, no grind.
+    </p>
+    <ul>
+      <li><b>Sound:</b> mobile browsers enable audio after the first tap.</li>
+      <li><b>Reset:</b> clears the counter for this session.</li>
+      <li><b>Privacy:</b> see <a href="../privacy.html">Privacy</a>.</li>
+    </ul>
+  </details>
   </div>
 
   <div class="ad-sidebar ad-right">

@@ -153,6 +153,34 @@
     background: #f0f0f0;
     font-weight: 500;
   }
+
+  /* Content (anti "thin content") */
+  details.content {
+    margin: 12px auto 0;
+    width: min(520px, 92vw);
+    text-align: left;
+    border: 1px solid var(--b);
+    border-radius: 16px;
+    background: #fafafa;
+    padding: 12px 14px;
+  }
+  details.content summary {
+    cursor: pointer;
+    font-weight: 800;
+    list-style: none;
+  }
+  details.content summary::-webkit-details-marker { display: none; }
+  details.content summary::after { content:"＋"; float:right; color:var(--m); font-weight:700; }
+  details.content[open] summary::after { content:"－"; }
+  details.content p { margin: 10px 0 0; color:#374151; }
+  details.content ul { margin: 10px 0 0 18px; color:#374151; }
+
+  /* Mobile fit: keep the game in viewport */
+  @media (max-width: 600px){
+    .main-wrapper{padding:12px}
+    .wrap{min-height:auto}
+    .scene{height:min(520px, calc(100svh - 250px))}
+  }
 </style>
 </head>
 <body>
@@ -190,6 +218,19 @@
       <button class="top-btn" onclick="shareSite()" data-translate="share">Share</button>
     </div>
   </div>
+
+  <details class="content" aria-label="About this page">
+    <summary>What is this?</summary>
+    <p>
+      This is a tiny micro‑interaction: drag the nut left/right to rotate it and “unscrew” it down the bolt.
+      It’s meant to be a short, satisfying break — 10–30 seconds, then you’re done.
+    </p>
+    <ul>
+      <li><b>Tip:</b> use small steady drags (works best on mobile).</li>
+      <li><b>Sound:</b> tap “Sound” once if your phone blocks audio.</li>
+      <li><b>Privacy:</b> see <a href="../privacy.html">Privacy</a>.</li>
+    </ul>
+  </details>
   </div>
 
   <div class="ad-sidebar ad-right">
